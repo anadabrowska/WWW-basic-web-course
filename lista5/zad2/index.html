@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Zadanie 2</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.23/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+        <script language="javascript" type="text/javascript" src="script.js"></script>
+    </head>
+<body>
+ 
+
+<div id="dialog-confirm" title="Usuwanie goscia">
+    <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>Na pewno chcesz usunąć gościa?</p>
+</div>
+
+<div id="dialog-form" title="Dodaj nowego gościa">
+  <p class="validateTips">Wyszstkie pola wymagane.</p>
+ 
+  <form>
+    <fieldset>
+      <label for="name">Imię</label>
+      <input type="text" name="name" id="name" value="Jane" class="text ui-widget-content ui-corner-all">
+      <label for="surname">Nazwisko</label>
+      <input type="text" name="surname" id="surname" value="Smith" class="text ui-widget-content ui-corner-all">
+      <label for="town">Miasto</label>
+      <input type="text" name="town" id="town" value="London" class="text ui-widget-content ui-corner-all">
+      <label for="code">Kod pocztowy</label>
+      <input type="text" name="code" id="code" value="11-111" class="text ui-widget-content ui-corner-all">
+      <label for="birth">Data urodzenia</label>
+      <input type="text" name="birth" id="birth" value="30-08-1998" class="text ui-widget-content ui-corner-all">
+ 
+      <!-- Allow form submission with keyboard without duplicating the dialog button -->
+      <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+    </fieldset>
+  </form>
+</div>
+ 
+ 
+<div id="users-contain" class="ui-widget">
+  <h1>Lista gości:</h1>
+  <table id="users" class="ui-widget ui-widget-content">
+    <thead>
+      <tr class="ui-widget-header ">
+        <th>Imię</th>
+        <th>Nazwisko</th>
+        <th>Miasto</th>
+        <th>Kod pocztowy</th>
+        <th>Data urodzenia</th>
+        <th>Opcja</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="row0">
+        <td>Marek</td>
+        <td>Kowalski</td>
+        <td>Wrocław</td>
+        <td>11-111</td>
+        <td>08-08-1888</td>
+        <td><button onclick="removeElem(0)">Usuń</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<button id="create-user">Dodaj gościa</button>
+ 
+ 
+</body>
+</html>

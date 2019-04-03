@@ -1,0 +1,58 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 5;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.err {
+    padding-left: 10px;
+    color: red;
+}
+
+.center {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center form {
+    padding: 10px;
+    width: auto;
+    background-color: lightgray;
+    border-bottom: 5px solid gray;
+}
+
+.text-input {
+    width: 312px;
+    margin-bottom: 10px;
+}
+
+#container {
+    width: 320px;
+    margin-right: 0;
+    padding-right: 0;
+    padding-bottom: 10px;
+}
+
+#month {
+    margin-right: 1px;
+    width: 50%;
+    height: 22px;
+}
+
+#month:invalid {
+    color: #666;
+}
+
+#day {
+    width: 20%;
+}
+
+#year {
+    width: 23%;
+}

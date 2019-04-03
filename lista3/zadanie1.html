@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+span.a {
+    /* default display: inline for span  */
+    width: 100px;
+    height: 100px;
+    padding: 5px;  
+    background-color: lightpink;
+}
+div.b {
+    /* default display: block for div */
+    width: 100px;
+    height: 100px;
+    padding: 5px; 
+    margin: 5px;     
+    background-color: lightpink;
+}
+span.c {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;        
+    background-color: lightpink; 
+}
+</style>
+</head>
+<body>
+
+
+<h2>display: inline(default for span)</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat
+    scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="a">Aliquam</span> 
+    <span class="a">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum 
+    velit sed laoreet. </div>
+
+<h2>display: block(default for div)</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit
+    sit amet consequat. Aliquam erat volutpat. <div class="b">Aliquam</div> 
+    <div class="b">venenatis</div> gravida nisl sit amet facilisis. Nullam cursus
+    fermentum velit sed laoreet. </div>
+
+<h2>display: inline-block</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat 
+    scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="c">Aliquam</span>
+    <span class="c">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum
+    velit sed laoreet. </div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,54 @@
+
+body {
+  padding-top: 100px;
+}
+.navbar-brand {
+  font-size: 30px;
+}
+.nav-link{
+  color: rgb(42, 110, 255);
+}
+
+.navbar-container {
+  padding: 20px 5px 20px 5px;
+}
+
+.navbar.fixed-top.fixed-theme {
+  background-color: rgba(34, 34, 34, 0.9);
+  border-color: #080808;
+  box-shadow: 0 0 5px rgba(0,0,0,.8);
+}
+
+.navbar-brand.fixed-theme {
+  font-size: 23px;
+}
+
+.navbar-container.fixed-theme {
+  padding: 0;
+}
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container,
+.navbar.fixed-top{
+    transition: 1s;
+    -webkit-transition:  1s;
+}
+.part1{
+  position: relative;
+  top: -100px;
+}
+#Mycarousel{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#h3, #h2 {
+  background-image: url("bg.jpg");
+  background-size: cover;
+  color: white;
+}

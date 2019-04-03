@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>Slider</title>
+	</head>	
+	<body>
+    <div class="main">
+      <div id ="slider"></div>
+
+      <div id="slides">
+          <img class = " slide", id = "slide1" src = "img1.jpg" alt = "">
+          <img class = " slide", id = "slide2" src = "img2.jpg" alt = "">
+          <img class = " slide", id = "slide3" src = "img3.jpg" alt = "">
+          <img class = " slide", id = "slide4" src = "img4.jpg" alt = "">
+      </div>
+    </div>
+    
+    <script>
+      
+      var slideTime = 1000;
+      var timer;
+      $( function() {
+        $( "#slider" ).slider({
+          min: 1,
+          max: 5,
+          range: 1,
+          slide: function( event, ui ) {
+          slideTime = ui.value * 1000;
+          clearInterval(timer);
+          time();
+          }
+        });
+      });
+        
+
+      window.onload = () => {
+          $("#slide2").hide();
+          $("#slide3").hide();
+          $("#slide4").hide();
+  
+          time();
+      }
+
+      function time() {
+          timer = setInterval(function() {
+              $('#slides > img:first')
+                  .hide( "blind", {direction: "horizontal"}, 1000 )
+                  .next()
+                  .show( "blind", {direction: "horizontal"}, 1000 )
+                  .end()
+                  .appendTo('#slides');
+          }, slideTime);
+      }
+
+      $('#slides').hover(function(ev){
+        clearInterval(timer);
+      }, function(ev){
+        time();
+      });
+      </script>
+  
+</body>
+</html>
+

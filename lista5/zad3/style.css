@@ -1,0 +1,42 @@
+body {
+    display: flex;
+}
+
+#paint {
+    width: 550px;
+    height: 100%;
+}
+
+#toolbar {
+    margin-top: 50px;
+    width: 521px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tool {
+    width: 25px;
+    height: 25px;
+}
+
+#map {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto auto;
+    width: 550px;
+    height: 500px;
+}
+
+.pixel {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000000;
+}
+
+#red    { background-color: red; }
+#orange { background-color: orange; }
+#yellow { background-color: yellow; }
+#green  { background-color: green; }
+#blue   { background-color: blue; }
+#pink   {background-color: pink;}

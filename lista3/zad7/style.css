@@ -1,0 +1,57 @@
+body {
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.c1 { background-color: rgb(59, 175, 74); }
+.c2 { background-color: rgb(209, 247, 71); }
+.c3 { background-color: rgb(71, 191, 247); }
+.c4 { background-color: rgb(247, 71, 71); }
+.c5 { background-color: rgb(247, 177, 71); }
+.c6 { background-color: rgb(156, 80, 206); }
+
+.square {
+    height: 100px;
+    margin: 15px;
+    flex-grow: 1;
+    transition: .5s ease;
+
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.growing {
+    display: flex;
+    flex-direction: row;
+}
+
+.growing > .square:hover {
+    flex-grow: 2;
+}
+
+.shrinking {
+    width: 350px;
+    height: 100px;
+    display: flex;
+}
+
+.shrinking div {
+    flex-shrink: 1;
+    flex-basis: 100px;
+    transition: .5s ease;
+
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.shrinking > div:hover {
+    flex-shrink: 2;
+}

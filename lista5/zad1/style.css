@@ -1,0 +1,15 @@
+
+#slider {
+  width: 1000px;
+	height: 20px;
+	position: absolute;
+	top: 5%;
+	left: 15%;
+}
+img {
+  width: 1000px;
+	height: 600px;
+	position: absolute;
+	top: 10%;
+	left: 15%;	
+}

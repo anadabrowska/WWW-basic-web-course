@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <script language="javascript" type="text/javascript" src="scripts/js/jquery-3.3.1.min.js"></script>
+        <script language="javascript" type="text/javascript" src="scripts/js/main.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <title>Test</title>
+    </head>
+
+    <div class="center">
+        <form>
+            Login<i class="err" id="login-err"></i><br>
+            <input type="text" id="login" name="login" class="text-input"><br>
+            Password<i class="err" id="pass-err"></i><br>
+            <input type="password" id="pass" name="pass" class="text-input"><br>
+            Confirm password<i class="err" id="pass2-err"></i><br>
+            <input type="password" id="pass2" name="pass2" class="text-input"><br>
+            <div id="container">
+                Birthday<i class="err" id="date-err"></i><br>
+                <select id="month" name="month">
+                    <option value="" disabled selected hidden>Month</option>
+                </select>
+                <input type="text" id="day" name="day" placeholder="Day">
+                <input type="text" id="year" name="year" placeholder="Year">
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</html>

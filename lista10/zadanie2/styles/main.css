@@ -1,0 +1,32 @@
+body {
+    margin: 15px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.plugin-container {
+    width: 101%;
+    height: auto;
+    display: block;
+
+    border: 1px solid gray;
+}
+
+.hidden {
+    display: none;
+}
+
+.plugin-autocomplete-item {
+    width: auto;
+    height: auto;
+
+    cursor: pointer;
+
+    background-color: white;
+    color: black;
+}
+
+.plugin-autocomplete-item:hover {
+    background-color: #3297FD;
+    color: white;
+}

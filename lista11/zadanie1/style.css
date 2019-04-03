@@ -1,0 +1,7 @@
+.nav-link:hover,
+.dropdown-item:hover{
+  border-bottom: 1px solid black;
+}
+nav{
+  margin-bottom: 50px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+<meta charset="UTF-8">
+</head>
+<body>
+        <form id="my_form" action="/action_page.php" method="post">
+            Numer Konta :<br>
+            <input type="password" name="account">
+            <br>
+            Imie :<br>
+            <input type="text" name="firstname">
+            <br>
+            Nazwisko:<br>
+            <input type="text" name="lastname">
+            <br>
+            E-mail :<br>
+            <input type="email" name="email" value="example@mail.pl">
+            <br>
+            Adres :<br>
+            <input type="text" name="adres" value="ul. Skłodowskiej 4 m.15">
+            <br>
+            Kod-pocztowy :<br>
+            <input type="text" name="code" value="xxx-xx">
+            <br>
+            Miasto:<br>
+            <select id="miasto" name="’miasto"’>
+                    <option value="0">Wrocław</option>
+                    <option value="1">Kraków</option>
+                    <option value="2">Poznań</option>
+                </select>
+            <br>
+            Kwota przelewu:<br>
+            <input type="number" min="0.00" max="10000.00" step="0.01" name="quantity"/>
+            <br>
+            Data pzrelewu:<br>
+            <input type="date" name="date">
+            <br><br>
+            <input type="submit">
+            </form>
+            
+</body>
+</html>

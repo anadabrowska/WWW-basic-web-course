@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<title>Title of the document</title>
+<style>
+    h1 {color:cadetblue;}
+    div p {color:red;} 
+    div > p {color:blue;}
+    div + p {color:yellow;}
+    #have-id{color: green;}
+    .have-class{color:purple;}
+</style>
+<meta charset="UTF-8">
+</head>
+<body>
+<h1>Type Selector</h1>
+
+<div>
+    <p>Child of div</p>
+    <span><p>Descendant in div not Child</p></span><!--it's a child of span-->
+</div>
+    <p>Paragraph 4 after div</p>
+    <p id="have-id">Paragraph 5 with id</p>
+    <p class="have-class">Paragraph 6 with class</p>
+</body>
+</html>

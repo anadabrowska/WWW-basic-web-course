@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+canvas{
+    position: absolute;
+    top:70px;
+    left:0;
+    background-color: lightpink;
+    border: 5px solid lightcoral;
+
+}
+#menu{
+    padding: 15px;
+    height: 70px;
+    background-color: rgb(207, 188, 224);
+    font-size: 25px;
+}
+#scores{
+    text-align: center;
+    font-size: 25px;
+    width: 300px;
+    height: 1000px;
+    float: right;
+    background-color: rgb(207, 188, 224);
+}

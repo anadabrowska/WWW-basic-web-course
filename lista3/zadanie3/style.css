@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#menu{
+    width:100%;
+    position: fixed;
+    left:0px;
+    top:0px;
+    height:50px;
+    background-color: #000;
+    z-index: 10;
+    color:white;
+}
+#menu .right{
+    float: right;
+    margin-right:10%
+}
+#menu a,#menu .right{
+    height:100%;
+    display: flex;
+}
+#menu a:hover{
+    color: gray;
+}
+#menu .right a{
+    align-items: center;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    margin:0 20px;
+}
+#first{
+    height:100vh;
+    width: 100%;
+    background-image: url("2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    position:  relative;
+    align-items: center;
+    justify-content: flex-end;  
+}
+#decor1{
+    width: 12em;
+    height: 12em;
+    background: none;
+    border: 0.4em solid grey;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -6em;
+    margin-bottom: -6em;
+    transform: rotate(45deg);
+}
+#decor2{
+    width: 6em;
+    height: 6em;
+    background: grey;
+    border: 0.4em solid grey;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3em;
+    margin-bottom: -3em;
+    transform: rotate(45deg);
+}
+#decor3{
+    width: 18em;
+    height: 18em;
+    background: none;
+    border: 0.4em solid grey;
+    position: absolute;
+    bottom: 60%;
+    left: 50%;
+    margin-left: -9em;
+    margin-bottom: -9em;
+    transform: rotate(45deg);
+}
+#decor4{
+    width: 6em;
+   height: 6em;
+   background: grey;
+   border: 0.4em solid grey;
+   position: absolute;
+   top: 0;
+   left: 50%;
+   margin-left: -3em;
+   margin-top: -3em;
+   transform: rotate(45deg);
+}
+#second{
+   
+    color:#2f2e2e;
+    background-color: grey;
+    font-size: 1.5em;
+    text-align: center;
+    align-items: center;
+    padding: 200px;
+    margin-top: -3em;
+    width: 100wh;
+    height: 80vh;
+}
+#third{
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-image: url(3.jpg);
+    background-attachment: fixed;
+    height: 100vh;
+}

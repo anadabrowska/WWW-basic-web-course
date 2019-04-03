@@ -1,0 +1,22 @@
+
+#container{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    background-color: rgb(196, 224, 233);
+
+    text-align: center; 
+    display: flex;
+    align-items: center;
+}
+input{
+    height: 40px;
+    width: 300px;
+    font-size: 10px;
+}
+#my_form{
+    font-size: 17px;
+}
